@@ -1,0 +1,34 @@
+{
+  "name": "code-verifier-backend",
+  "version": "1.0.0",
+  "description": "Backend Node + Express + TS + Swagger",
+  "main": "index.js",
+  "scripts": {
+    "start:local": "npx nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svasilovski/code-verifier-backend.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "typescript",
+    "swagger",
+    "mongoose"
+  ],
+  "author": "@svasilovski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/svasilovski/code-verifier-backend/issues"
+  },
+  "homepage": "https://github.com/svasilovski/code-verifier-backend#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
