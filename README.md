@@ -100,7 +100,7 @@ added 114 packages, and audited 669 packages in 8s
   run `npm fund` for details
 
 found 0 vulnerabilities
-Successfully created .eslintrc.json file in /home/svasilovski/Documents/projects/MERN/code-verifier-backend
+Successfully created .eslintrc.json file in /home/USERNAME/Documents/projects/MERN/code-verifier-backend
 $
 ```
 
@@ -117,9 +117,9 @@ The following questions will help Jest to create a suitable configuration for yo
 ✔ Which provider should be used to instrument code for coverage? › babel
 ✔ Automatically clear mock calls, instances, contexts and results before every test? … yes
 
-✏️  Modified /home/svasilovski/Documents/projects/MERN/code-verifier-backend/package.json
+✏️  Modified /home/USERNAME/Documents/projects/MERN/code-verifier-backend/package.json
 
-📝  Configuration file created at /home/svasilovski/Documents/projects/MERN/code-verifier-backend/jest.config.ts
+📝  Configuration file created at /home/USERNAME/Documents/projects/MERN/code-verifier-backend/jest.config.ts
 $ 
 ```
 crear la carpeta __test__ y agregar el test de prueba example.spec.ts
