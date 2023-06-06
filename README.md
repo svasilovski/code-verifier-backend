@@ -153,5 +153,31 @@ ingresamos a gitignore.io y seteamos
 - Node
 - VisualStudio Code
 
+---
+SEGUNDA PARTE
+---
 
+- **Webpack** para empaqetar y que valla mas rapido
+- **Cors** Permite hacer peticiones de dominio diferente al que está desplegada la aplicación. Se puede hahilitar listas blancas y listas negras para los accesos
+- **helmet** Permite configurar mas seguridad en peticiones determinadas y politocas de seguridad.
+
+```terminal
+$ npm i cors helmet
+```
+Instalamos los tipos 
+
+```terminal
+$ npm i --save-dev @types-cors
+```
+
+```typescript
+// Security
+import cors from 'cors';
+import helmet from 'helmet';
+```
+- **mongoose** Sirve para conectarse a la base de datos mongodb
+
+```terminal
+$ npm i mongoose
+```
 

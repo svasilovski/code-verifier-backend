@@ -13,3 +13,11 @@ export type ErrorResponse = {
 	message: string
 }
 
+/**
+ * Error JSON response for Controller
+ */
+export type GoodByeResponse = {
+	message: string,
+	date: Date
+}
+
