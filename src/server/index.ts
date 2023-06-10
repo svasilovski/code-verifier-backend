@@ -17,6 +17,9 @@ const server: Express = express();
 // from this point onover: http://localhost:8000/api
 server.use('/api', rootRouter);
 
+// static server
+server.use(express.static('public'));
+
 // TODO Mongo connection
 
 // Security config

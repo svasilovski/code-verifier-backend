@@ -41,4 +41,20 @@
 - Realiza pruebas con Postman y demuestra que funciona correctamente
 
 ## Ejercicio 3
+Enunciado del ejercicio: 
+
+- Replicar proyecto completo Node con TS y Express visto en el vídeo
+- Replicar la creación de base de datos en MongoDB
+    - Crear una colección llamada Katas (retos de programación)
+      - Cada documento deberá tener:
+        - Name
+        - Description
+        - Level (nivel de dificultad numérico)
+        - User (id asociado al usuario que lo ha creado)
+        - Date (Fecha de creación del reto)
+        - Valoration (sobre 5, valor numérico)
+        - Chances (número de intentos realizados por otros usuarios)
+- Crear archivo de Kata.Entity.ts con el esquema Mongoose correspondiente
+
+## Ejercicio 4
 
