@@ -181,3 +181,44 @@ import helmet from 'helmet';
 $ npm i mongoose
 ```
 
+---
+TERCERA PARTE
+---
+
+```terminal
+$ npm i -D @types/swagger-jsdoc @types/swagger-ui-express
+```
+
+```terminal
+$ npm i --save swagger-jsdoc swagger-ui-express
+```
+
+Para agregar anotaciones, y generar un JSON soa
+```terminal
+$ npm i tsoa
+```
+
+## MongoDB
+
+```
+$ mongod --dbpath ../mongodb/data
+```
+
+### mongo shell
+
+Verifciamos su instalación
+```
+$ which mongo
+```
+
+Ejecutamos una shell de mongo en la terminal
+
+```
+$ mongo
+```
+
+https://www.mongodb.com/community/forums/t/unable-to-launch-mongodb-in-windows-10/9276
+
+References
+[Podman - Mongodb](https://mehmetozanguven.com/run-mongodb-with-podman/)
+
