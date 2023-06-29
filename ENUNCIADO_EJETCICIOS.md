@@ -58,3 +58,36 @@ Enunciado del ejercicio:
 
 ## Ejercicio 4
 
+### Parte 1
+
+- Replicar proyecto completo Node con TS y Express visto en el vídeo
+  - Asegúrate de poder ver correctamente documentada tu API con Swagger
+
+- Descarga el JSON de 5000 contactos (Carpeta de MOCKS del Repo del proyecto (https://gitlab.com/masajo/code-verifier-backend/-/tree/main/mocks))
+
+  - JSON obtenido de la API Rest Pública (https://randomuser.me/api/?results=5000)
+  - Crea una base de datos en Mongo con Mongo Compass llamada “Pruebas”
+  - Importa el JSON a una colección llamada Contacts
+
+- Hacer peticiones al servidor de Mongo desde Mongo Compass & Mongo Shell para hacer los siguientes ejercicios:
+
+  - Listar todos los contactos.
+  - Busca el primer contacto que sea de Alemania (Germany).
+  - Busca todos los contactos que tengan Blake como nombre (first).
+  - Busca los primeros 5 contactos que tengan como género (gender) hombre (male)
+  - Devuelve los 4 primeros contactos ordenados por nombre (name) de manera descendente.
+  - Clona la colección de Contacts a CopiaContacts y luego bórrala.
+  - Renombra el campo de name por nombre.
+  - Borra todos los contactos que tengan como estado (state) Florida.
+
+Como solución deberás entregar ya sea escrito o en captura los scripts a ejecutar de cada parte.
+
+### Parte 2
+- Muestra las primeras 5 ciudades que empiecen por A ordenadas de manera ascendente, las soluciones deben ser únicas.
+- Crea una colección a parte, que solo contenga a los contactos de Francia (France) y que tengan entre 18 y 50 años. Usa una agregación para ello.
+- Añade un número favorito a cada contacto, luego crea un bucket agrupando por número favorito que separe en 5 segmentos.
+- En la colección de Contatcs, haz una proyección la cual tiene que devolver solo el name y username del contacto.
+- Haz una consulta en la colección de Contacts la cual devuelva un documento por cada nombre (name) y que sea único, ordenado por apellido (last), tienes que usar el operador $unwind.
+- Haz una proyección convirtiendo la fecha (date) a un formato DD-MM-AAAA, la nueva variable será fechaNacimiento
+
+Como solución deberás entregar ya sea escrito o en captura los scripts a ejecutar de cada parte.

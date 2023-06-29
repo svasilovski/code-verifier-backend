@@ -1,5 +1,8 @@
 import express, { Express, Request, Response } from "express";
 
+// Swagger
+import SwaggerUi from "swagger-ui-express";
+
 // Security
 import cors from "cors";
 import helmet from "helmet";
@@ -8,10 +11,23 @@ import helmet from "helmet";
 
 // Root routes
 import rootRouter from "../routes";
+import mongoose from "mongoose";
 
 // Create Espress APP
 const server: Express = express();
 // const port: string | number = process.env.PORT || 8000;
+
+// * Swagger config and route
+server.use(
+	'/docs',
+	SwaggerUi.serve,
+	SwaggerUi.setup(undefined, {
+		swaggerOptions: {
+			url: "/swagger.json",
+			explorer: true
+		}
+	})
+)
 
 // Define SERVER to use "/api" and use rootRouter from "index.ts" in routes
 // from this point onover: http://localhost:8000/api
@@ -21,6 +37,8 @@ server.use('/api', rootRouter);
 server.use(express.static('public'));
 
 // TODO Mongo connection
+// NOTE: Se cambio localhost:27017 por 0.0.0.0:27017 ya que daba error de conexión.
+mongoose.connect('mongodb://0.0.0.0:27017/codeverificaton');
 
 // Security config
 server.use(helmet());

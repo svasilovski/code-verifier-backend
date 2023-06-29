@@ -1,0 +1,35 @@
+Ejercicios parte 2
+
+- Muestra las primeras 5 ciudades que empiecen por A ordenadas de manera ascendente, las soluciones deben ser únicas.
+    $ db.Contacts.find({"location.state": {$regex: /^a/, $options: 'i'}},{"_id":false,"location.state": 1}).sort().limit(5)
+
+- Crea una colección a parte, que solo contenga a los contactos de Francia (France) y que tengan entre 18 y 50 años. Usa una
+  agregación para ello.
+    $ db.Contacts.aggregate([{$match: {"location.country": "France"}},{$match: {"dob.age": {$gte: 18}}},{$match: {"dob.age": {$lte: 50}}},{$out: "FranceContacts"}])
+
+- Añade un número favorito a cada contacto, luego crea un bucket agrupando por número favorito que separe en 5 segmentos.
+    $ 
+    
+- En la colección de Contatcs, haz una proyección la cual tiene que devolver solo el name y username del contacto.
+    $ db.Contacts.find({},{"_id":false,"name":1,"login.username":1})
+    
+- Haz una consulta en la colección de Contacts la cual devuelva un documento por cada nombre (name) y que sea único, ordenado
+  por apellido (last), tienes que usar el operador $unwind.
+    $ db.Contacts.aggregate([{ $unwind: "$name" },{ $sort: {"name.last": 1}}])
+    
+- Haz una proyección convirtiendo la fecha (date) a un formato DD-MM-AAAA, la nueva variable será fechaNacimiento
+    $ db.Contacts.aggregate([{
+        $project: {
+            "_id":0,
+            "dob.date":1,
+            fechaNacimiento: {
+                $dateToString: {
+                    format: "%d %m %Y",
+                    date: {$toDate:"$dob.date"}
+                }
+            }
+        }
+    }])
+    
+
+Como solución deberás entregar ya sea escrito o en captura los scripts a ejecutar de cada parte.
