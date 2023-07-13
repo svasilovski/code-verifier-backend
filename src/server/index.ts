@@ -38,7 +38,7 @@ server.use(express.static('public'));
 
 // TODO Mongo connection
 // NOTE: Se cambio localhost:27017 por 0.0.0.0:27017 ya que daba error de conexión.
-mongoose.connect('mongodb://0.0.0.0:27017/codeverificaton');
+mongoose.connect('mongodb://127.0.0.1:27017/codeverificaton');
 
 // Security config
 server.use(helmet());

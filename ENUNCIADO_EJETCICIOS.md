@@ -91,3 +91,17 @@ Como solución deberás entregar ya sea escrito o en captura los scripts a ejecu
 - Haz una proyección convirtiendo la fecha (date) a un formato DD-MM-AAAA, la nueva variable será fechaNacimiento
 
 Como solución deberás entregar ya sea escrito o en captura los scripts a ejecutar de cada parte.
+
+## Ejercicio 5
+- Replicar proyecto completo Node con TS y Express visto en el vídeo
+  - Asegúrate de poder realizar todas las operaciones CRUD en la colección de Users de la base de datos
+
+- Crear un nuevo modelo y endpoints para gestionar peticiones CRUD para la colección de Katas. Además:
+  - Debes poder filtrar las Katas disponibles por nivel de dificultad
+  - Debes poder obtener las 5 Katas más recientes
+  - Debes poder listar las Katas ordenadas de mejor valoradas a menos valoradas
+  - Debes poder valorar una Kata con una nueva nota y debe almacenarse la media
+    - Por lo que el modelo de Kata deberá tener un valor que será número de valoraciones de usuarios, para así obtener la media
+  - Debes poder encontrar las Katas ordenadas por intentos
+
+  Entity -> ORM -> Controller -> Routes
