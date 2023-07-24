@@ -20,5 +20,5 @@ goodbyteRouter.route("/")
         return res.send(response);
     })
 
-// Esport Good Bye Router
+// Export Good Bye Router
 export default goodbyteRouter;

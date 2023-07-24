@@ -76,5 +76,5 @@ usersRouter.route("/")
         return res.send(response);
     })
 
-// Esport Hello Router
+// Export User Router
 export default usersRouter;

@@ -20,5 +20,5 @@ helloRouter.route("/")
         return res.send(response);
     })
 
-// Esport Hello Router
+// Export Hello Router
 export default helloRouter;

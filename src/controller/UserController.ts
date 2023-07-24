@@ -9,7 +9,7 @@ import { getAllUser, getUserByID, deleteUserByID, createUser, updateUserByID } f
 @Tags("UserController")
 export class UserController implements IUserController {
     /**
-     * Endpoint yo retrive the users in the collections Users of DB
+     * Endpoint to retrive the users in the collections Users of DBusers
      * @param {string} id Id of user to retrive (optional)
      * @returns All user or user found by Id
      */
@@ -27,7 +27,7 @@ export class UserController implements IUserController {
     }
 
     /**
-     * Endpoint yo delete the users in the collections Users of DB
+     * Endpoint to delete the users in the collections Users of DB
      * @param {string} id Id of user to delete (optional)
      * @returns Message informing if deletion was correct.
      */
