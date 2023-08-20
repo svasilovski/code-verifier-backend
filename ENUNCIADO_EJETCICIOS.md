@@ -105,3 +105,13 @@ Como solución deberás entregar ya sea escrito o en captura los scripts a ejecu
   - Debes poder encontrar las Katas ordenadas por intentos
 
   Entity -> ORM -> Controller -> Routes
+
+# Cambio a Youtube
+## Sesión 6
+- https://www.youtube.com/watch?v=YF7Hv35v7w0&list=PLkVpKYNT_U9erM5pz0t-YBdJtK1TI9YF6&index=6
+  - Reproducir lo realizado en el video
+  - 01:16:42 Register User
+
+## Sesión 7
+- https://www.youtube.com/watch?v=aYpYwMnHK9w&list=PLkVpKYNT_U9erM5pz0t-YBdJtK1TI9YF6&index=7
+  - 00:00:00
